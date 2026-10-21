@@ -1,0 +1,228 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3F4A2C;
+  background-image: radial-gradient(#2F3A2B 3.5px, transparent 3.5px);
+  background-size: 30px 30px;
+}
+
+.container{
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.foto-perfil{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0px auto 20px;
+}
+
+.section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 10px;
+}
+  
+p{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 0 0 15px;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  width: 240px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: url(https://i.postimg.cc/760MT46d/Paw-Photoroom.png), pointer;
+  transition:background-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn.primario {
+  background-color: white;
+  color: #263020;
+}
+
+.btn.secundario {
+  background-color: white;
+  color: #263020;
+}
+
+.btn.terciario {
+  background-color: white;
+  color: #263020;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn:hover {
+  background-color: #B8C99A;
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: none;
+}
+
+.icone-social{
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.redes-sociais{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin-top: 22px;
+}
+
+.icone-social{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: transform 0.25s ease;
+}
+
+.icone-social img{
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.icone-social:hover {
+  transform: translateY(-3px);
+}
+
+.cartao-sobre {
+  width: 90%;
+  max-width: 650px;
+  padding: 25px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.cartao-sobre p{
+  max-width: 100%;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+  margin: 0 0 8px;
+}
+
+.cartao-sobre h1 {
+  margin-bottom: 10px;
+}
+
+.projetos {
+  width: 90%;
+  max-width: 650px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.projetos {
+  width: 90%;
+  max-width: 650px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.card-projeto {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #B8C99A;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.card-projeto img,
+.projeto-vazio {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.projeto-vazio {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.card-projeto a {
+  color: inherit;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .grade-projetos {
+    grid-template-columns: 1fr;
+  }
+}
